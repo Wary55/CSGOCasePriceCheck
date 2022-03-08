@@ -3,22 +3,22 @@
  function getprice($url)
     {
         $steamapicall=file_get_contents($url);
-        if($steamapicall[33]==",")                         //Replacement of , with . so that Euro Values can be shown. if you just gonna use USD, you dont need that check
+        if($steamapicall[33]==",")                      //If you use USD instead of Euro, you only need to check for a .
         {
           $priceget = mb_substr($steamapicall, 32,4);
-          $priceget[1]='.';
+          $priceget[1]='.';                             //Replacement of , with . so that Euro Values can be shown. if you just gonna use USD, you dont need that check
         }
 
-        else if($steamapicall[34]==",")
+        else if($steamapicall[34]==",")                  //If you use USD instead of Euro, you only need to check for a .
         {
           $priceget = mb_substr($steamapicall, 32,5);
-          $priceget[2]='.';
+          $priceget[2]='.';                           //Replacement of , with . so that Euro Values can be shown. if you just gonna use USD, you dont need that check
         }
 
-        else if($steamapicall[36]==",")
+        else if($steamapicall[36]==",")             //If you use USD instead of Euro, you only need to check for a .
         {
           $priceget = mb_substr($steamapicall, 32,6);
-          $priceget[3]='.';
+          $priceget[3]='.';                         //Replacement of , with . so that Euro Values can be shown. if you just gonna use USD, you dont need that check
         }
 
         else
@@ -178,7 +178,5 @@ class Kisten {
 
   echo "Sum of Case Investments: ".$cases.PHP_EOL;
   echo "Sum with RMR Investments: ".$sum.PHP_EOL;
-
-
 
 ?>
