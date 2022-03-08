@@ -48,13 +48,13 @@ class Kisten {
     }
 }
    $sum=0;
-  $rmr2020l=new Kisten("RMR 2020 Legends", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=2020%20RMR%20Legends", 220);
+  $rmr2020l=new Kisten("RMR 2020 Legends", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=2020%20RMR%20Legends", 1);
   $sum += $rmr2020l->print();
 
-  $rmr2020ch=new Kisten("RMR 2020 Challengers", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=2020%20RMR%20Challengers", 220);
+  $rmr2020ch=new Kisten("RMR 2020 Challengers", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=2020%20RMR%20Challengers", 1);
   $sum += $rmr2020ch->print();
 
-  $rmr2020co=new Kisten("RMR 2020 Contenders", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=2020%20RMR%20Contenders", 81);
+  $rmr2020co=new Kisten("RMR 2020 Contenders", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=2020%20RMR%20Contenders", 1);
   $sum += $rmr2020co->print();
 
   echo "Sum of RMR Capsules: ".$sum.PHP_EOL.PHP_EOL;
@@ -63,46 +63,46 @@ class Kisten {
 
 
   //Syntax of Classes: Name of case, API call link to case, quantity
-  $horizon=new Kisten("Horizon Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Horizon%20Case", 742);
+  $horizon=new Kisten("Horizon Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Horizon%20Case", 1);
   $cases += $horizon->print();
 
-  $prisma=new Kisten("Prisma Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Horizon%20Case", 518);
+  $prisma=new Kisten("Prisma Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Horizon%20Case", 1);
   $cases += $prisma->print();
 
-  $spec2=new Kisten("Specture 2 Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Spectrum%202%20Case",436);
+  $spec2=new Kisten("Specture 2 Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Spectrum%202%20Case",1);
   $cases += $spec2->print();
 
-  $chroma2=new Kisten("Chroma 2 Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Chroma%202%20Case", 368);
+  $chroma2=new Kisten("Chroma 2 Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Chroma%202%20Case", 1);
   $cases += $chroma2->print();
 
-  $dz=new Kisten("Danger Zone Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Danger%20Zone%20Case", 273);
+  $dz=new Kisten("Danger Zone Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Danger%20Zone%20Case", 1);
   $cases += $dz->print();
 
-  $prisma2=new Kisten("Prisma 2 Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Prisma%202%20Case", 241);
+  $prisma2=new Kisten("Prisma 2 Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Prisma%202%20Case", 1);
   $cases += $prisma2->print();
 
-  $chroma3=new Kisten("Chroma 3 Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Chroma%203%20Case", 217);
+  $chroma3=new Kisten("Chroma 3 Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Chroma%203%20Case", 1);
   $cases += $chroma3->print();
 
-  $clutch=new Kisten("Clutch Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Clutch%20Case", 218);
+  $clutch=new Kisten("Clutch Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Clutch%20Case", 1);
   $cases += $clutch->print();
 
-  $gamma2=new Kisten("Gamma 2 Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Gamma%202%20Case", 154);
+  $gamma2=new Kisten("Gamma 2 Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Gamma%202%20Case", 1);
   $cases += $gamma2->print();
 
-  $brokenfang = new Kisten("Broken Fang Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Operation%20Broken%20Fang%20Case", 49);
+  $brokenfang = new Kisten("Broken Fang Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Operation%20Broken%20Fang%20Case", 1);
   $cases += $brokenfang -> print();
 
-  $fracture = new Kisten("Fracture Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Fracture%20Case", 15);
+  $fracture = new Kisten("Fracture Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Fracture%20Case", 1);
   $cases += $fracture -> print();
 
-  $phoenix = new Kisten("Operation Phoenix Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Operation%20Phoenix%20Weapon%20Case", 6);
+  $phoenix = new Kisten("Operation Phoenix Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Operation%20Phoenix%20Weapon%20Case", 1);
   $cases += $phoenix -> print();
 
-  $cs20=new Kisten("CS20 Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=CS20%20Case", 4);
+  $cs20=new Kisten("CS20 Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=CS20%20Case", 1);
   $cases += $cs20 -> print();
 
-  $breakout=new Kisten("Operation Breakout Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Operation%20Breakout%20Weapon%20Case", 3);
+  $breakout=new Kisten("Operation Breakout Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Operation%20Breakout%20Weapon%20Case", 1);
   $cases += $breakout -> print();
 
   $revolvo=new Kisten("Revolver Case", "https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=Revolver%20Case", 3);
